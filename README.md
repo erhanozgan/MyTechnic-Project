@@ -1,6 +1,6 @@
 # MyTechnic-Project
 
-#INSTALLATION
+#**INSTALLATION**
 
 Projeyi çalıştırmak için "appsettings.json" dosyasındaki DBConStr ConnectionString'inden Mysql databaseinizin bilgilerini giriniz.
 Bu bilgileri girdikten sonra Update-Database komutunu çalıştırınız.
@@ -9,4 +9,4 @@ Projeyi çalıştırabilirsiniz.
 
 #**SCREENSHOT**
 
-###
+###**Dashboard**
