@@ -12,3 +12,11 @@ Projeyi çalıştırabilirsiniz.
 ###**Dashboard**
 ![fragment-dialog](https://github.com/erhanozgan/MyTechnic-Project/blob/f37c8b2af42ac0f5d5eb6c5ac0588da53a435905/Dashboard.png)
 
+###**Personnels**
+![fragment-dialog](https://github.com/erhanozgan/MyTechnic-Project/blob/af15c531aa2b557b66f501558d8e3810b0d4df34/Personnels.png)
+
+###**Teams**
+![fragment-dialog](https://github.com/erhanozgan/MyTechnic-Project/blob/af15c531aa2b557b66f501558d8e3810b0d4df34/Team.png)
+
+###**Shift**
+![fragment-dialog](https://github.com/erhanozgan/MyTechnic-Project/blob/af15c531aa2b557b66f501558d8e3810b0d4df34/Shift.png)
