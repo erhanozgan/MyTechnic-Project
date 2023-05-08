@@ -6,3 +6,7 @@ Projeyi çalıştırmak için "appsettings.json" dosyasındaki DBConStr Connecti
 Bu bilgileri girdikten sonra Update-Database komutunu çalıştırınız.
 Bu komut ile beraber database tabloları otomatik olarak doldurulacaktır. 
 Projeyi çalıştırabilirsiniz.
+
+#**SCREENSHOT**
+
+###
