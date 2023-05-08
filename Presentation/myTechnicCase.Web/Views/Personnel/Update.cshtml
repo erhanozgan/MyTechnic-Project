@@ -1,0 +1,97 @@
+@model myTechnicCase.Application.Dtos.Personnel.PersonnelListDto
+
+@{
+    ViewData["Title"] = "Personnel Edit";
+}
+<div class="row">
+    <div class="col-xxl-12">
+        <!--begin::Tables Widget 9-->
+        <div class="card card-xxl-stretch mb-5 mb-xl-8">
+            <!--begin::Header-->
+            <div class="card-header border-0 pt-5">
+                <h3 class="card-title align-items-start flex-column">
+                    <span class="card-label fw-bolder fs-3 mb-1">Personnel Edit</span>
+                </h3>
+            </div>
+            <!--end::Header-->
+            <!--begin::Body-->
+            <div class="card-body">
+                <!--begin::Table container-->
+                <form asp-action="Update" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="PersonnelCode" class="col-form-label"></label>
+                                <input asp-for="PersonnelCode" class="form-control"/>
+                                <span asp-validation-for="PersonnelCode" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="Name" class="col-form-label"></label>
+                                <input asp-for="Name" class="form-control"/>
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="Surname" class="col-form-label"></label>
+                                <input asp-for="Surname" class="form-control"/>
+                                <span asp-validation-for="Surname" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="UserName" class="col-form-label"></label>
+                                <input asp-for="UserName" class="form-control"/>
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="Email" class="col-form-label"></label>
+                                <input asp-for="Email" class="form-control"/>
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="Phone" class="col-form-label"></label>
+                                <input asp-for="Phone" class="form-control"/>
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="Address" class="col-form-label"></label>
+                                <input asp-for="Address" class="form-control"/>
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="Title" class="col-form-label"></label>
+                                <input asp-for="Title" class="form-control"/>
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10 form-check">
+                    </div>
+                    <a class="btn btn-secondary mr-2" asp-action="Index"><i class="fa fa-arrow-left"></i> Back To Personnel List</a>  
+                    <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Save Changes</button>
+                </form>
+                <!--end::Table container-->
+            </div>
+            <!--begin::Body-->
+        </div>
+        <!--end::Tables Widget 9-->
+    </div>
+</div>

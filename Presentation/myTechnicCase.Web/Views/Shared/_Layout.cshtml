@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - myTechnicCase.Web</title>
+	<link rel="shortcut icon" href="/Metronic/assets/media/logos/favicon.ico" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+	<link href="/Metronic/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/Metronic/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/Metronic/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<link href="/lib/fancybox/fancybox.css" rel="stylesheet" />
+	<link href="~/css/site.css" rel="stylesheet" />
+	<style>
+		.toastr {
+			opacity: 1 !important;
+		}
+
+		.toast {
+			opacity: 1 !important;
+		}
+	</style>
+</head>
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed" onload="startTime()">
+	<div class="d-flex flex-column flex-root">
+		<div class="page d-flex flex-row flex-column-fluid">
+			<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+				<div id="kt_header" style="" class="header align-items-stretch">
+					<partial name="_Header" />
+				</div>
+				<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+					<div id="kt_content_container" class="container-fluid">
+						@RenderBody()
+					</div>
+				</div>
+				<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+					<partial name="_Footer" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/Metronic/assets/plugins/global/plugins.bundle.js"></script>
+	<script src="/Metronic/assets/js/scripts.bundle.js"></script>
+	<script src="/Metronic/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+	<!--end::Page Vendors Javascript-->
+	<!--begin::Page Custom Javascript(used by this page)-->
+	<script src="/Metronic/assets/js/custom/widgets.js"></script>
+	<script src="/Metronic/assets/js/custom/apps/chat/chat.js"></script>
+	<script src="/Metronic/assets/js/custom/modals/create-app.js"></script>
+	<script src="/Metronic/assets/js/custom/modals/upgrade-plan.js"></script>
+	<script src="/Metronic/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+	<script src="/js/jquery.blockUI.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<partial name="_ValidationScriptsPartial" />
+	<script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+	<script src="~/lib/fancybox/fancybox.umd.js"></script>
+	<script src="/js/site.js" asp-append-version="true"></script>
+
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,65 @@
+@model myTechnicCase.Application.Dtos.Shift.ShiftListDto
+
+@{
+    ViewData["Title"] = "Shift Edit";
+}
+<div class="row">
+    <div class="col-xxl-12">
+        <!--begin::Tables Widget 9-->
+        <div class="card card-xxl-stretch mb-5 mb-xl-8">
+            <!--begin::Header-->
+            <div class="card-header border-0 pt-5">
+                <h3 class="card-title align-items-start flex-column">
+                    <span class="card-label fw-bolder fs-3 mb-1">Shift Edit</span>
+                </h3>
+            </div>
+            <!--end::Header-->
+            <!--begin::Body-->
+            <div class="card-body">
+                <!--begin::Table container-->
+                <form asp-action="Update" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="Name" class="col-form-label"></label>
+                                <input asp-for="Name" class="form-control"/>
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="Type" class="col-form-label"></label>
+                                <input asp-for="Type" class="form-control"/>
+                                <span asp-validation-for="Type" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="StartDate" class="col-form-label"></label>
+                                <input asp-for="StartDate" class="form-control"/>
+                                <span asp-validation-for="StartDate" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row-cols-4">
+                                <label asp-for="EndDate" class="col-form-label"></label>
+                                <input asp-for="EndDate" class="form-control"/>
+                                <span asp-validation-for="EndDate" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10 form-check">
+                    </div>
+                    <a class="btn btn-secondary mr-2" asp-action="Index"><i class="fa fa-arrow-left"></i> Back To Team List</a>  
+                    <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Save Changes</button>
+                </form>
+                <!--end::Table container-->
+            </div>
+            <!--begin::Body-->
+        </div>
+        <!--end::Tables Widget 9-->
+    </div>
+</div>
