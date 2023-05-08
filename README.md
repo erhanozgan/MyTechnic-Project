@@ -10,3 +10,5 @@ Projeyi çalıştırabilirsiniz.
 #**SCREENSHOT**
 
 ###**Dashboard**
+![fragment-dialog](https://github.com/erhanozgan/MyTechnic-Project/blob/f37c8b2af42ac0f5d5eb6c5ac0588da53a435905/Dashboard.png)
+
